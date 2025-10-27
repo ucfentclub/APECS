@@ -8,6 +8,8 @@ import Accommodations from "./pages/Accommodations";
 import VenueInfo from "./pages/VenueInfo";
 import TravelGuide from "./pages/TravelGuide";
 import NotFound from "./pages/NotFound";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 
 const queryClient = new QueryClient();
 
@@ -16,7 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/APECS">
+      <Router basename="/APECS">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/accommodations" element={<Accommodations />} />
@@ -24,8 +26,7 @@ const App = () => (
           <Route path="/travel-guide" element={<TravelGuide />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
-      </BrowserRouter>
+      </Router>
     </TooltipProvider>
   </QueryClientProvider>
 );
