@@ -16,15 +16,15 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/APECS">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/accommodations" element={<Accommodations />} />
           <Route path="/venue-info" element={<VenueInfo />} />
           <Route path="/travel-guide" element={<TravelGuide />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+      </BrowserRouter>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
