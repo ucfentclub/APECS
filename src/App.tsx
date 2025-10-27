@@ -18,7 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <Router basename="/APECS">
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/accommodations" element={<Accommodations />} />
@@ -26,7 +26,7 @@ const App = () => (
           <Route path="/travel-guide" element={<TravelGuide />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
