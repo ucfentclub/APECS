@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="/#registration" 
+                  href="{`${import.meta.env.BASE_URL}#registration`} 
                   className="text-muted-foreground hover:text-primary transition-colors"
                   onClick={(e) => {
                     if (window.location.pathname === '/') {
