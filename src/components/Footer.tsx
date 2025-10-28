@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="{`${import.meta.env.BASE_URL}#registration`} 
+                  href={`${import.meta.env.BASE_URL}#registration`} 
                   className="text-muted-foreground hover:text-primary transition-colors"
                   onClick={(e) => {
                     if (window.location.pathname === '/') {
@@ -98,7 +98,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="/#registration" 
+                  href={`${import.meta.env.BASE_URL}#registration`}  
                   className="text-muted-foreground hover:text-primary transition-colors"
                   onClick={(e) => {
                     if (window.location.pathname === '/') {
@@ -111,12 +111,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/venue-info" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href={`${import.meta.env.BASE_URL}venue-info`}  className="text-muted-foreground hover:text-primary transition-colors">
                   Venue Info
                 </a>
               </li>
               <li>
-                <a href="/accommodations" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href={`${import.meta.env.BASE_URL}accommodations`} className="text-muted-foreground hover:text-primary transition-colors">
                   Accommodations
                 </a>
               </li>
